@@ -1,0 +1,39 @@
+.selector table {
+    width: 100%;
+}
+
+.selector thead, 
+.selector tbody, 
+.selector tr, 
+.selector td, 
+.selector th { 
+    display: block; 
+}
+
+.selector tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.selector thead th {
+    height: 30px;
+
+    /*text-align: left;*/
+}
+
+.selector tbody {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.selector thead {
+    /* fallback */
+}
+
+
+.selector tbody td, .selector thead th {
+    width: 33.33%;
+    float: left;
+}

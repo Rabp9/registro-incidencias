@@ -4,6 +4,7 @@
     echo $this->Html->css("jquery-ui.min");
     echo $this->Html->css("jquery-ui.structure.min");
     echo $this->Html->css("jquery-ui.theme.min");
+    echo $this->Html->css("selector");
     echo $this->Html->script("jquery-ui.min", array("inline" => false));
     echo $this->Html->script("datepicker-es", array("inline" => false));
     echo $this->Html->script("checkboxes-fix", array("inline" => false));

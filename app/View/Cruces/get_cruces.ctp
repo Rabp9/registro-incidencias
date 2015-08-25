@@ -1,6 +1,6 @@
 <!-- File: /app/View/Cruces/get_cruces.ctp -->
 
-<div class="table-responsive" id="dv-cruces">
+<div class="table-responsive selector" id="dv-cruces">
     <table class="table">
         <thead>
             <tr>
