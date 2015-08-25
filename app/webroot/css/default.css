@@ -1,0 +1,22 @@
+body {
+    padding-top: 100px;
+    background-color: #428BCA;
+    padding-bottom: 80px;
+}
+
+div.cuerpo {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div.lateral {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div.incidencia-checkbox {
+    border: none;
+    box-shadow: none;
+}

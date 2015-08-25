@@ -1,0 +1,24 @@
+body {
+    background-image: url('../img/fondo-login.jpg');
+    background-size: 100%;
+}
+
+div.row-logo {
+    margin-top: 100px;
+    text-align: center;
+}
+
+div.row-pnl-login {
+    margin-top: 50px;
+}
+
+div.pnl-login{
+    border-radius: 10px;
+}
+
+div.titulo-logo {
+    font-size: 20px;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border-radius: 10px;
+}

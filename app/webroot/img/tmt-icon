@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/plantilla_tmt.dwt.php" codeOutsideHTMLIsLocked="false" --><head>
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>TMT - Transporte Metropolitano de Trujillo</title>
+<!-- InstanceEndEditable -->
+<meta property="og:url" content="TMT - Transporte Metropolitano de Trujillo">
+<meta property="og:title" content="TMT - Transporte Metropolitano de Trujillo">
+<meta property="og:description" content="TRANSPORTES METROPOLITANOS DE TRUJILLO: Transporte Público Urbano e Interurbano, Municipalidad Provincial de Trujillo,sistema de transporte de personas,Encargada de los proyectos vinculados al nuevo sistema de Transporte Público">
+<meta property="og:image" content="www.tmt.gob.pe/images/logo_tmt.jpg">
+<meta name="verify-v1" content="ftcS9lCkulLMM0Avuw1fn6mpEXSv0zyw9y/IAKOXEnA=">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="ROBOTS" content="PARAMETROS">
+<meta name="ROBOTS" content="NOFOLLOW">
+<link href="tmt-icon_files/css_generaltmt.css" rel="stylesheet" type="text/css">
+<link href="tmt-icon_files/fonts25.css" rel="stylesheet" type="text/css">
+<link href="tmt-icon_files/css_pag_tmt.css" rel="stylesheet" type="text/css">
+<script src="tmt-icon_files/widgets.js" id="twitter-wjs"></script><script language="JavaScript" type="text/javascript" src="tmt-icon_files/embed.js"></script>
+<script type="text/javascript" src="tmt-icon_files/jquery-1_002.js"></script>
+<script type="text/javascript" src="tmt-icon_files/funciones.js"></script>
+<script type="text/javascript" src="tmt-icon_files/buscador.js"></script>
+<script type="text/javascript" src="tmt-icon_files/jquery-1.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body data-twttr-rendered="true">
+<div id="informativo">
+  <style>div#pop-up_conv{
+	padding:0px;
+	width:431px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px; 
+position:absolute; 
+top:10%; 
+left:-50%; 
+z-index:800; 
+display:none; 
+opacity:0; 
+/*background-color:#005a34;border:1px solid black;*/ 
+}</style> 
+ 
+       <style type="text/css">
+#informativo2 {
+	position:absolute;
+	top:50px;
+	width:auto;
+	height:auto;
+	z-index:800;
+	border-width:3px;
+	border-style:solid;
+	border-color:#555555;
+	visibility: visible;
+}
+#informativo_fla {
+	position:absolute;
+	top:50px;
+	width:auto;
+	height:auto;
+	z-index:1000;
+	border-width:0px;
+	visibility: visible;
+}
+	#cab_publi {
+	top:50px;
+	width:auto;
+	height:auto;
+	z-index:4;
+	border-width:0px;
+	border-style:solid;
+	border-color:#555555;
+	padding-left:0px	
+}
+#conte_publi {
+	width:auto;
+	height:auto;
+	border:solid 0px #3c5a98;
+	background:#FFF;
+	z-index:5;
+	margin-top:0px;	
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+ </div>
+<style type="text/css">
+.barrightyoutube{ background:url('images/youl_bl_cb.png');background-repeat:no-repeat;width:27px;height:109px;position:fixed;right:0px;top:110px; z-index:1001;}
+.barrightyoutubec{ background:url('images/you_bl_cg.png');background-repeat:no-repeat;width:288px;height:345px;position:fixed;right:0px;top:100px; z-index:1101;}
+.barconteyoutube{margin:5px 0 0 47px}
+
+.barrighttwitter{background:url('images/tw_cb.png');background-repeat:no-repeat;width:30px;height:110px;position:fixed;right:0px;top:225px;z-index:1002;}
+.barrighttwitterc{background:url('images/tw_ag.png');background-repeat:no-repeat;width:288px;height:345px;position:fixed;right:0px;top:120px; z-index:1100;}
+.barcontetwitter{margin:5px 0 0 47px}
+
+.barrightfacebook{background:url('images/fb_cb.png');background-repeat:no-repeat;width:27px;height:120px;position:fixed;right:0px;top:340px; z-index:1001;}
+.barrightfacebookc{background:url('images/fb_bg.png');background-repeat:no-repeat;width:288px;height:558px;position:fixed;right:0px;top:135px; z-index:1101;}
+.barcontefacebook{margin:5px 0 0 27px;
+border:2px solid #3C5A98; background:#FFF}
+
+</style>
+<!-- stylos y codigo
+.barrightblogger{ background:url('images/bl_cb.png');background-repeat:no-repeat;width:27px;height:109px;position:fixed;right:0px;top:100px; z-index:1001;}
+.barrightbloggerc{ background:url('images/bl_cg.png');background-repeat:no-repeat;width:288px;height:345px;position:fixed;right:0px;top:100px; z-index:1101;}
+.barconteblogger{margin:5px 0 0 47px}
+
+<div class="barrightblogger" onmouseover="this.className='barrightbloggerc'" onmouseout="this.className='barrightblogger'">
+<div class="barconteblogger">
+CONTENT BLOGGER HERE
+</div>
+</div>
+-->
+<!--CODIGO YOUTUBE-->
+<div class="barrightyoutube" onmouseover="this.className='barrightyoutubec'" onmouseout="this.className='barrightyoutube'">
+ <div style="border: 0; height:110px; overflow: hidden; width: 248px;">
+ <iframe allowtransparency="true" marginheight="0" marginwidth="0" scrolling="no" src="tmt-icon_files/subscribe_widget.html" style="left:35px; position: relative; top: 5px;" frameborder="0" align="middle" width="210px">
+ </iframe></div>
+  <iframe style="left: 35px; position: relative; top: 5px;" src="tmt-icon_files/videoseries.html" allowfullscreen="" frameborder="0" height="220" width="248"></iframe>
+</div>
+<!--CODIGO TWITTER-->
+<div class="barrighttwitter" onmouseover="this.className='barrighttwitterc'" onmouseout="this.className='barrighttwitter'">
+<div data-twttr-id="twttr-sandbox-0" class="barcontetwitter">
+<iframe title="Twitter Timeline" style="border: medium none; max-width: 100%; min-width: 180px; width: 180px;" allowfullscreen="" class="twitter-timeline twitter-timeline-rendered" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0" height="330"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
+<!--CODIGO FACEBOOK-->
+<div class="barrightfacebook" onmouseover="this.className='barrightfacebookc'" onmouseout="this.className='barrightfacebook'">
+<div class="barcontefacebook">
+<iframe src="tmt-icon_files/likebox.html" scrolling="no" style="border:none; overflow:hidden; width:248px; height:558px;" allowtransparency="true" frameborder="0"></iframe>
+</div>
+</div>
+
+
+
+<div id="con_fondos" align="center">
+<div id="con_fondo_bajo">
+<div id="fondo_variado">
+	<div id="cont_general"> 
+		<header>
+			<div id="cabezera">
+            <div id="fon_cabezera">
+<table border="0" cellpadding="0" cellspacing="0" width="950">
+<tbody><tr>
+<td width="208"><div id="logo"></div></td>
+<td valign="top" width="642"><div><style>
+/* Root = Horizontal, Secondary = Vertical */
+ul#menu {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+/*  width: 500px;*/ /*For KHTML*/
+width:642px;
+  list-style: none;
+  height: 32px;
+  border:0px solid #eee;
+  padding-bottom:0px;
+  z-index:999
+}
+ul#menu li {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  float: left; /*For Gecko*/
+  display: inline;
+  list-style: none;
+  position: relative;
+  z-index:999
+  }
+ul#menu li{
+	padding-bottom:1px;
+}
+ul#menu li:hover{
+	background:#ffffff;/*color sobre blanco*/
+ }
+ul#menu  ul {
+  margin: 0;
+  padding:0;
+  width: 165px;
+  border:0px solid #00477b;
+  border-bottom:0px solid #37521b;
+  list-style:none;
+  display: none;
+  position: absolute;
+  top: 35px; /*Distancia de Menu con submenus*/
+  left: 0px; /*direccion de Menu con submenus*/
+  background:#004272;/*color submenu*/ 
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter:alpha(opacity=80);
+  z-index:999
+}
+ul#menu ul:after /*From IE 7 lack of compliance*/{
+  clear: both;
+  display: block;
+  font: 1px/0px serif;
+  content: ".";  
+  visibility: hidden;
+  z-index:999
+}
+ul#menu ul li {
+  width: 160px;
+  float: left; /*For IE 7 lack of compliance*/
+  display: block !important;
+  display: inline; /*For IE*/
+  z-index:999
+}
+/* Root Menu */
+ul#menu a {
+	margin-top:3px;
+	background:url(images/separa2.png);
+	background-repeat:no-repeat;	
+  padding: 12px 5px 5px 12px;
+  float: none !important; /*For Opera*/
+  float: left; /*For IE*/
+  display: block;
+  color: #FFF; /*color de letra de MENU*/
+  text-decoration: none;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:11px;
+  font-weight:bold;
+  border-right:0px solid #004272;/*color de fondo de MENU*/
+  text-decoration: none;
+  height: auto !important;
+  height: 1%; /*For IE*/ 
+  z-index:999
+}
+/* Root Menu Hover Persistence */
+ul#menu a:hover,
+ul#menu li:hover a,
+ul#menu li.iehover a {
+color: #004272; /*color al hacer clic en el texto de menÃº*/
+}
+/* 2nd Menu */
+ul#menu li:hover li a,
+ul#menu li.iehover li a {
+  float: none;
+  border:none; 
+  z-index:999
+}
+/* 2nd Menu Hover Persistence */
+ul#menu li:hover li a:hover,
+ul#menu li:hover li:hover a,
+ul#menu li.iehover li a:hover,
+ul#menu li.iehover li.iehover a {
+ background:#004272;/*color al hacer clic en el texto*/
+  color: #00477b;
+}
+/* 3rd Menu */
+ul#menu li:hover li:hover li a,
+ul#menu li.iehover li.iehover li a {
+  background: #EEE;
+  color: #666;
+}
+/* 3rd Menu Hover Persistence */
+ul#menu li:hover li:hover li a:hover,
+ul#menu li:hover li:hover li:hover a,
+ul#menu li.iehover li.iehover li a:hover,
+ul#menu li.iehover li.iehover li.iehover a {
+background:#ddd;
+  color: #FFF;
+}
+/* 4th Menu */
+ul#menu li:hover li:hover li:hover li a,
+ul#menu li.iehover li.iehover li.iehover li a {
+	
+background: #0FF;
+  color: #666;
+}
+/* 4th Menu Hover */
+ul#menu li:hover li:hover li:hover li a:hover,
+ul#menu li.iehover li.iehover li.iehover li a:hover {
+  background:  #CCC;
+  color: #FFF;
+}
+ul#menu ul ul,
+ul#menu ul ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 165px;
+  z-index:999
+}
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul#menu li:hover ul ul,
+ul#menu li:hover ul ul ul,
+ul#menu li.iehover ul ul,
+ul#menu li.iehover ul ul ul {
+  display: none;
+}
+ul#menu li:hover ul,
+ul#menu ul li:hover ul,
+ul#menu ul ul li:hover ul,
+ul#menu li.iehover ul,
+ul#menu ul li.iehover ul,
+ul#menu ul ul li.iehover ul {
+  display: block;
+}
+ul#menu .selected{
+background-color:#ffffff; /* color de fondo texto portada */
+color:#0078cf; /* color de texto portada */
+}
+#text{
+	color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:11px;
+  text-align:left
+	}
+</style>
+ <div id="menu" class="menusp">
+<ul id="menu">
+<li>  	
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+   			
+         </li><li> 
+                         
+         <a href="http://www.tmt.gob.pe/index.php?paggs=1&amp;option=2ht35" class="selected">INICIO</a>
+                  </li>      
+          <li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li>
+      </li><li><a href="#eccbc87e4b5ce2fe28308fd9f2a7baf3&amp;option=2ht32">ORGANIZACIÓN</a>   
+		             <ul>
+                      						
+					               
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=32&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Gerencia General</span></a>
+                                </div>
+                                </li>
+                                   
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=34&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Funciones Generales</span></a>
+                                </div>
+                                </li>
+                                   
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=45&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Nosotros</span></a>
+                                </div>
+                                </li>
+                                   
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=46&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Directorio Telefonico TMT</span></a>
+                                </div>
+                                </li>
+                                  
+		              </ul>
+        </li>
+       <li>
+      </li><li>
+      </li><li><a href="#1679091c5a880faf6fb5e6087eb1b2dc&amp;option=2ht32">GALERIA</a>   
+		             <ul>
+                      						
+					               
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=35&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Galeria de Fotos</span></a>
+                                </div>
+                                </li>
+                                   
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=36&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Galeria de Videos</span></a>
+                                </div>
+                                </li>
+                                  
+		              </ul>
+        </li>
+       <li>
+      </li><li><a href="#8f14e45fceea167a5a36dedd4bea2543&amp;option=2ht32">PUBLICACIONES</a>   
+		             <ul>
+                      						
+					               
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=53&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Noticias</span></a>
+                                </div>
+                                </li>
+                                   
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=43&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Boletines</span></a>
+                                </div>
+                                </li>
+                                   
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=42&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Revistas Virtuales</span></a>
+                                </div>
+                                </li>
+                                  
+		              </ul>
+        </li>
+       <li>
+      </li><li><a href="#c9f0f895fb98ab9159f51fd0297e236d&amp;option=2ht32">ACTIVIDADES</a>   
+		             <ul>
+                      						
+					               
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=51&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Actividades Internas</span></a>
+                                </div>
+                                </li>
+                                   
+			                    <li>
+                                <div style="background-color:#0078cf" align="left">
+                                <a href="http://www.tmt.gob.pe/pag.php?pags=52&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc" class=""><span id="text">Actividades Externas</span></a>
+                                </div>
+                                </li>
+                                  
+		              </ul>
+        </li>
+       <li>
+   			
+         </li><li> 
+                         
+         <a href="http://www.tmt.gob.pe/pag.php?paggs=9&amp;option=2ht35" class="#">TRANSPARENCIA</a>
+                  </li>      
+          <li>
+   			
+         </li><li> 
+                         
+         <a href="http://www.tmt.gob.pe/pag.php?paggs=14&amp;option=2ht35" class="#">DIRECTORIO</a>
+                  </li>      
+         
+
+</ul>
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td valign="middle">   
+    <div id="corporativo" style="margin-top:2px"><a href="https://mail.google.com/a/tmt.gob.pe" target="_blank"><img src="tmt-icon_files/c_corporativo.png" style="border:0"></a></div> </td>
+    <td valign="middle">
+    <div id="contact" style="margin-top:5px"><a href="http://www.tmt.gob.pe/pag.php?pags=55?option=1"><img src="tmt-icon_files/contactenos.png" style="border:0"></a></div></td>
+    <td valign="middle">
+    <div id="contact" style="margin-top:5px"><a href="http://www.tmt.gob.pe/pag.php?paggs=13?option=1"><img src="tmt-icon_files/convocatorias.png" style="border:0"></a></div></td>
+    <td align="right"><div width:394px;="" height:56px"="" align="right">
+     <form action="pag.php" method="get" enctype="application/x-www-form-urlencoded" target="_self">    
+        <input name="paggs" id="paggs" value="17" type="hidden">
+        <input name="criterio" id="txt_buscarok" placeholder="Buscar..." type="text"> <input name="Buscar" src="tmt-icon_files/busca.png" id="Buscar" value="01773a8a11c5f7314901bdae5825a190/" type="image">      
+  </form>
+   </div></td>
+  </tr>
+</tbody></table>
+</div></td>
+</tr>
+</tbody></table>
+</div>            </div>
+			<div id="banner"> 
+            <script type="text/javascript" src="tmt-icon_files/jquery-1.js"></script>
+<script type="text/javascript" src="tmt-icon_files/custom.js"></script>	
+<link rel="stylesheet" href="tmt-icon_files/nivo-slider.css" type="text/css" media="screen">
+<script src="tmt-icon_files/jquery_002.js" type="text/javascript"></script> 
+<div id="slider-block"><div id="slider-holder"><div class="nivoSlider" style="position: relative; background: url(&quot;DAT_archivos/img_banner/14.jpg&quot;) no-repeat scroll 0% 0% transparent;" id="slider">
+    <img style="display: none;" src="tmt-icon_files/14.jpg" alt="" title="AL TRABAJO EN BICI ES MÁS SANO Y ECONÓMICO." height="373" width="950">
+    <img style="display: none;" src="tmt-icon_files/13.jpg" alt="" title="PEATONALIZACION" height="373" width="950">
+    <div style="width: 950px; height: 100%; opacity: 1; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll 0px 0% transparent; top: 0px; bottom: 0px; left: 0px;" class="nivo-slice"></div><div style="left: 63px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -63px 0% transparent; bottom: 0px; top: 0px;" class="nivo-slice"></div><div style="left: 126px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -126px 0% transparent; top: 0px; bottom: 0px;" class="nivo-slice"></div><div style="left: 189px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -189px 0% transparent; bottom: 0px; top: 0px;" class="nivo-slice"></div><div style="left: 252px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -252px 0% transparent; top: 0px; bottom: 0px;" class="nivo-slice"></div><div style="left: 315px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -315px 0% transparent; bottom: 0px; top: 0px;" class="nivo-slice"></div><div style="left: 378px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -378px 0% transparent; top: 0px; bottom: 0px;" class="nivo-slice"></div><div style="left: 441px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -441px 0% transparent; bottom: 0px; top: 0px;" class="nivo-slice"></div><div style="left: 504px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -504px 0% transparent; top: 0px; bottom: 0px;" class="nivo-slice"></div><div style="left: 567px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -567px 0% transparent; bottom: 0px; top: 0px;" class="nivo-slice"></div><div style="left: 630px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -630px 0% transparent; top: 0px; bottom: 0px;" class="nivo-slice"></div><div style="left: 693px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -693px 0% transparent; bottom: 0px; top: 0px;" class="nivo-slice"></div><div style="left: 756px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -756px 0% transparent; top: 0px; bottom: 0px;" class="nivo-slice"></div><div style="left: 819px; width: 63px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -819px 0% transparent; bottom: 0px; top: 0px;" class="nivo-slice"></div><div style="left: 882px; width: 68px; height: 0px; opacity: 0; background: url(&quot;DAT_archivos/img_banner/13.jpg&quot;) no-repeat scroll -882px 0% transparent; top: 0px; bottom: 0px;" class="nivo-slice"></div><div style="opacity: 0.7;" class="nivo-caption"><p style="display: block;">PEATONALIZACION</p></div><div style="display: none;" class="nivo-directionNav"><a class="nivo-prevNav">Prev</a><a class="nivo-nextNav">Next</a></div><div class="nivo-controlNav"><a class="nivo-control" rel="0">1</a><a class="nivo-control active" rel="1">2</a></div></div></div>
+</div>			</div>
+		</header>    
+   		 <header>    
+   			 <div id="con_enlaces">
+               <style type="text/css">
+<!--
+.social a:hover {
+	opacity: 0.5;
+}
+-->
+</style>
+<div class="social" style="width:100%; padding-top:35px">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr>
+          <td align="center"><a href="http://www.tmt.gob.pe/pag.php?pags=50"><img src="tmt-icon_files/b015f24e9c4eaa54104dsolic.png" style="border:0" height="54" width="120"></a></td>  <td align="center"><img src="tmt-icon_files/linea_b.png" style="border:0" height="63" width="4"></td>   
+          <td align="center"><a href="http://www.tmt.gob.pe/pag.php?pags=61"><img src="tmt-icon_files/52fc2aee802efbad6985libro_recla.png" style="border:0" height="54" width="120"></a></td>  <td align="center"><img src="tmt-icon_files/linea_b.png" style="border:0" height="63" width="4"></td>   
+          <td align="center"><a href="http://www.tmt.gob.pe/descargar.php?cod=%3C?php%20echo%20md5%28%27segatmpt%27%29?%3E&amp;proy=proy&amp;file=Plan_Movilidad_Trujillo_IDOM.pdf"><img src="tmt-icon_files/a522fbd52ff0d8e2c9faestud_transp.png" style="border:0" height="54" width="120"></a></td>  <td align="center"><img src="tmt-icon_files/linea_b.png" style="border:0" height="63" width="4"></td>   
+          <td align="center"><a href="http://www.tmt.gob.pe/pag.php?paggs=13?option=1"><img src="tmt-icon_files/f3e52c300b822a8123e7trab_nosotros.png" style="border:0" height="54" width="120"></a></td>  <td align="center"><img src="tmt-icon_files/linea_b.png" style="border:0" height="63" width="4"></td>   
+          <td align="center"><a href="http://www.tmt.gob.pe/pag.php?pags=57"><img src="tmt-icon_files/cac7238208a6f4aeedceforo_iv.png" style="border:0" height="54" width="120"></a></td>  <td align="center"><img src="tmt-icon_files/linea_b.png" style="border:0" height="63" width="4"></td>   
+      </tr>
+  </tbody></table>
+</div>
+			  </div>
+   		 </header>        
+        <div id="contenido">
+       <table border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td>
+        <!-- InstanceBeginEditable name="EditRegion3" -->
+         <link href="tmt-icon_files/css_generaltmt.css" rel="stylesheet" type="text/css">
+
+<div>
+	<article id="Caja">
+    	<div id="panel_izq">    
+   <style type="text/css">
+<!--
+.social a:hover {
+	opacity: 0.5;
+}
+-->
+</style>
+           <div class="social" id="panel_izq_enlaces">
+       <a href="http://www.tmt.gob.pe/pag.php?pags=42&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc"><img src="tmt-icon_files/729fbaf01455353285fdpan_izq5.png" style="border:0" height="42" width="196"></a>
+       </div> 
+           <div class="social" id="panel_izq_enlaces">
+       <a href="http://www.tmt.gob.pe/pag.php?pags=62"><img src="tmt-icon_files/2974788b53f73e7950e8pan_izq4.png" style="border:0" height="42" width="196"></a>
+       </div> 
+           <div class="social" id="panel_izq_enlaces">
+       <a href="http://www.tmt.gob.pe/pag.php?pags=63"><img src="tmt-icon_files/1fb5e72be96a57b7a3b9pan_izq3.png" style="border:0" height="42" width="196"></a>
+       </div> 
+           <div class="social" id="panel_izq_enlaces">
+       <a href="http://www.tmt.gob.pe/pag.php?pags=59"><img src="tmt-icon_files/4e96fc8ecd81da214039pan_izq2.png" style="border:0" height="42" width="196"></a>
+       </div> 
+           <div class="social" id="panel_izq_enlaces">
+       <a href="http://www.tmt.gob.pe/pag.php?pags=56"><img src="tmt-icon_files/8b1d4dae4314191be293pan_izq1.png" style="border:0" height="42" width="196"></a>
+       </div> 
+           <div class="social" id="panel_izq_enlaces">
+       <a href="http://www.tmt.gob.pe/pag.php?pags=65"><img src="tmt-icon_files/ce710c59b4eae3a2f894planpiloto.jpg" style="border:0" height="116" width="196"></a>
+       </div> 
+               	 </div>      
+             	<div id="panel_der">    
+   <style type="text/css">
+<!--
+.social a:hover {
+	opacity: 0.5;
+}
+-->
+</style>
+           <div class="social" id="panel_der_enlaces">
+       <a href=""><img src="tmt-icon_files/67c2bd385b570d5cf44em_tecnicas.png" style="border:0" height="104" width="160"></a>
+       </div> 
+           <div class="social" id="panel_der_enlaces">
+       <a href=""><img src="tmt-icon_files/2bed57b5e7da7db0be5cobservatorio.png" style="border:0" height="104" width="160"></a>
+       </div> 
+           <div class="social" id="panel_der_enlaces">
+       <a href="http://www.tmt.gob.pe/pag.php?pags=64"><img src="tmt-icon_files/fddd7938a71db5f81fccpacto_movi.png" style="border:0" height="131" width="160"></a>
+       </div> 
+               	 </div>        
+         <div id="panel_centro">
+         <iframe src="tmt-icon_files/notas_top.html" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" height="354" width="100%"></iframe>
+    
+    </div>
+    </article>
+</div>
+<div>
+<article id="Caja">
+<table border="0">
+  <tbody><tr>
+    <td valign="top">
+       	<div id="panel_acti">      
+           <img src="tmt-icon_files/nom_actividades.png" height="39" width="314">
+           <style>
+#containermarq {
+position: relative;
+width: 314px;
+}
+#widgetmarq {
+overflow: hidden;
+background:#FFF;
+padding: 2px;
+border: 0px solid #004271;
+height: 203px; /* You should adjust this height for your project. */
+position: relative;
+float: left;
+min-width: 200px;
+-moz-border-radius-bottomright: 0px;
+}
+#widgetmarq li {
+clear: left;
+overflow: hidden;
+position: relative;
+top: 0;
+padding-bottom: 1em;
+height: 65px;
+}
+</style>
+<div id="containermarq">
+	<ul id="widgetmarq">
+	
+
+        	
+
+        	
+
+        	
+
+        	
+
+        	
+
+        	
+
+         			
+<li style="margin-top: 0px; display: list-item;">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+    <tbody><tr>
+      <td width="13%">
+      <div style="background:url(images/fonffech.jpg); width:27px; margin-left:8px" align="center">
+<span class="e23">20</span><br><span class="e64">feb</span>
+</div>         
+      </td>
+      <td width="87%">
+      <div class="e3x">Trujillo 2014-02-17</div>
+      <div style="padding-bottom:1px; padding-right:3px">
+      <div style="background:url(images/comulef.jpg) no-repeat; padding-left:13px">
+      <div style=" background:url(images/foncomulef.png); height:45px; border-left:0px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999; border-right:1px solid #999999; padding:2px">
+                     <a href="http://www.tmt.gob.pe/pag.php?paggs=8&amp;cod=496" class="e19c">IV FORO DE MOVILIDAD URBANA SOSTENIBLE DE TRUJILLO: PACTO POR LA MOVILIDAD...</a>    
+      </div>
+      </div>
+      </div>
+      </td>
+    </tr>        
+  </tbody></table>
+</li><li style="margin-top: 0px; display: list-item;">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+    <tbody><tr>
+      <td width="13%">
+      <div style="background:url(images/fonffech.jpg); width:27px; margin-left:8px" align="center">
+<span class="e23">20</span><br><span class="e64">oct</span>
+</div>         
+      </td>
+      <td width="87%">
+      <div class="e3x">Trujillo 2013-10-09</div>
+      <div style="padding-bottom:1px; padding-right:3px">
+      <div style="background:url(images/comulef.jpg) no-repeat; padding-left:13px">
+      <div style=" background:url(images/foncomulef.png); height:45px; border-left:0px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999; border-right:1px solid #999999; padding:2px">
+                     <a href="http://www.tmt.gob.pe/pag.php?paggs=8&amp;cod=495" class="e19c">CONFERENCIA DE PRENSA PARA LA PRESENTACIÓN DE LO QUE SERÁ EL III FORO TALLER DE MOVILIDAD URBANA SOS...</a>    
+      </div>
+      </div>
+      </div>
+      </td>
+    </tr>        
+  </tbody></table>
+</li><li style="margin-top: 0px; display: list-item;">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+    <tbody><tr>
+      <td width="13%">
+      <div style="background:url(images/fonffech.jpg); width:27px; margin-left:8px" align="center">
+<span class="e23">20</span><br><span class="e64">sep</span>
+</div>         
+      </td>
+      <td width="87%">
+      <div class="e3x">Trujillo 2013-09-22</div>
+      <div style="padding-bottom:1px; padding-right:3px">
+      <div style="background:url(images/comulef.jpg) no-repeat; padding-left:13px">
+      <div style=" background:url(images/foncomulef.png); height:45px; border-left:0px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999; border-right:1px solid #999999; padding:2px">
+                     <a href="http://www.tmt.gob.pe/pag.php?paggs=8&amp;cod=491" class="e19c">UN DÍA SIN AUTOS...</a>    
+      </div>
+      </div>
+      </div>
+      </td>
+    </tr>        
+  </tbody></table>
+</li><li style="margin-top: 0px; display: list-item;">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+    <tbody><tr>
+      <td width="13%">
+      <div style="background:url(images/fonffech.jpg); width:27px; margin-left:8px" align="center">
+<span class="e23">20</span><br><span class="e64">sep</span>
+</div>         
+      </td>
+      <td width="87%">
+      <div class="e3x">Trujillo 2013-09-06</div>
+      <div style="padding-bottom:1px; padding-right:3px">
+      <div style="background:url(images/comulef.jpg) no-repeat; padding-left:13px">
+      <div style=" background:url(images/foncomulef.png); height:45px; border-left:0px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999; border-right:1px solid #999999; padding:2px">
+                     <a href="http://www.tmt.gob.pe/pag.php?paggs=8&amp;cod=489" class="e19c">II FORO DE MOVILIDAD URBANA SOSTENIBLE...</a>    
+      </div>
+      </div>
+      </div>
+      </td>
+    </tr>        
+  </tbody></table>
+</li><li style="margin-top: 0px; display: list-item;">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+    <tbody><tr>
+      <td width="13%">
+      <div style="background:url(images/fonffech.jpg); width:27px; margin-left:8px" align="center">
+<span class="e23">20</span><br><span class="e64">sep</span>
+</div>         
+      </td>
+      <td width="87%">
+      <div class="e3x">Trujillo 2013-09-02</div>
+      <div style="padding-bottom:1px; padding-right:3px">
+      <div style="background:url(images/comulef.jpg) no-repeat; padding-left:13px">
+      <div style=" background:url(images/foncomulef.png); height:45px; border-left:0px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999; border-right:1px solid #999999; padding:2px">
+                     <a href="http://www.tmt.gob.pe/pag.php?paggs=8&amp;cod=488" class="e19c">CONFERENCIA DE PRENSA...</a>    
+      </div>
+      </div>
+      </div>
+      </td>
+    </tr>        
+  </tbody></table>
+</li><li style="margin-top: 0px; display: list-item;">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+    <tbody><tr>
+      <td width="13%">
+      <div style="background:url(images/fonffech.jpg); width:27px; margin-left:8px" align="center">
+<span class="e23">20</span><br><span class="e64">ago</span>
+</div>         
+      </td>
+      <td width="87%">
+      <div class="e3x">Trujillo 2013-08-08</div>
+      <div style="padding-bottom:1px; padding-right:3px">
+      <div style="background:url(images/comulef.jpg) no-repeat; padding-left:13px">
+      <div style=" background:url(images/foncomulef.png); height:45px; border-left:0px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999; border-right:1px solid #999999; padding:2px">
+                     <a href="http://www.tmt.gob.pe/pag.php?paggs=8&amp;cod=487" class="e19c">I FORO TALLER DE MOVILIDAD  URBANA SOSTENIBLE...</a>    
+      </div>
+      </div>
+      </div>
+      </td>
+    </tr>        
+  </tbody></table>
+</li><li style="margin-top: 0px; display: list-item;">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+    <tbody><tr>
+      <td width="13%">
+      <div style="background:url(images/fonffech.jpg); width:27px; margin-left:8px" align="center">
+<span class="e23">20</span><br><span class="e64">feb</span>
+</div>         
+      </td>
+      <td width="87%">
+      <div class="e3x">Trujillo 2014-02-18</div>
+      <div style="padding-bottom:1px; padding-right:3px">
+      <div style="background:url(images/comulef.jpg) no-repeat; padding-left:13px">
+      <div style=" background:url(images/foncomulef.png); height:45px; border-left:0px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999; border-right:1px solid #999999; padding:2px">
+                     <a href="http://www.tmt.gob.pe/pag.php?paggs=8&amp;cod=497" class="e19c">IV FORO - PACTO POR LA MOVILIDAD DE LA CIUDAD DE TRUJILLO...</a>    
+      </div>
+      </div>
+      </div>
+      </td>
+    </tr>        
+  </tbody></table>
+</li></ul>        
+</div>
+<script type="text/javascript" src="tmt-icon_files/jquery-1_002.js"></script>
+<script type="text/javascript"> 
+(function($) {
+$.fn.newsScroll = function(options) {	
+	return this.each(function() {	  
+		var
+		  $this = $(this), 	  
+		    defaults = {
+		  	speed: 400, 
+		  	delay: 3000,
+		  	list_item_height: $this.children('li').outerHeight() 
+	     },
+		  settings = $.extend({}, defaults, options);		 
+	  setInterval(function() {
+	  	    $this.children('li:first')
+	  	    		.animate({ 
+	  	    			marginTop : '-' + settings.list_item_height, 
+	  	    		   opacity: 'hide' }, 
+	  	    		   settings.speed,   	    		   
+	  	    		   function() {  	    		   	
+	  	 					$this.children('li:first')
+	  	 					     .appendTo($this)
+	  	 					     .css('marginTop', 0) 
+	  	 					     .fadeIn(300);
+  		 			  }
+ 	 			  );
+ 	  }, settings.delay);
+	  });
+}
+})(jQuery);
+</script>
+<script type="text/javascript">
+	$('#widgetmarq').newsScroll({
+		speed: 2000,
+		delay: 5000
+	});
+</script>
+<a href="http://www.tmt.gob.pe/pag.php?pags=51&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc"><img src="tmt-icon_files/ver_mas_acti.png" height="33" width="265"></a>                
+        </div>
+    </td>
+    <td valign="top">
+    <div id="panel_videos">
+    <div> <img src="tmt-icon_files/nom_videos.png" height="39" width="300"></div>
+    <div>           
+           <iframe src="tmt-icon_files/3htzs1NXoyc.html" allowfullscreen="" frameborder="0" height="203" width="300"></iframe>	 
+		</div>
+    <div><a href="http://www.tmt.gob.pe/pag.php?pags=36&amp;option=69df8a6de70cbaed4b61b6fcd851a4cc"><img src="tmt-icon_files/ver_mas_video.png" height="30" width="278"></a> </div>         
+    </div>
+    </td>
+    <td valign="top">
+     <div id="panel_enc">
+          <img src="tmt-icon_files/nom_encuesta.png" height="39" width="288">   
+			<div class="titencue">¿Cuál considera usted que es el problema más importante del transporte en nuestra ciudad?<br><br></div> 
+<div align="left">
+	<form method="post" action="encuestas/votarencuesta.php"> 
+	 <div class="verde">
+          <input name="opciones" value="105" type="radio"> Antigüedad de los micros y combis                <br>
+          </div>
+             <div class="verde">
+          <input name="opciones" value="106" type="radio"> Excesivas unidades de taxis                <br>
+          </div>
+             <div class="verde">
+          <input name="opciones" value="107" type="radio"> Imprudencias de los peatones                <br>
+          </div>
+             <div class="verde">
+          <input name="opciones" value="108" type="radio"> Inexistencias de paraderos autorizados                <br>
+          </div>
+             
+      <div style="text-align: center; padding: 10px;"><input name="votar" value="Votar" type="submit"></div>
+  </form>              
+</div>
+     
+    
+    </div>
+    </td>
+  </tr>
+</tbody></table>
+    </article>
+</div>
+<div>
+<article id="Caja">
+    	<div id="carrucelp">
+       <img src="tmt-icon_files/enlaces_interes.png" height="61" width="950"> 
+ <link href="tmt-icon_files/carrucel.css" rel="stylesheet" type="text/css">
+<script src="tmt-icon_files/jquery.js"></script>
+<script type="text/javascript">
+$.fn.infiniteCarousel = function () {
+    function repeat(str, num) {
+        return new Array( num + 1 ).join( str );
+    }
+    return this.each(function () {
+        var $wrapper = $('> div', this).css('overflow', 'hidden'),
+            $slider = $wrapper.find('> ul'),
+            $items = $slider.find('> li'),
+            $single = $items.filter(':first'),
+            
+            singleWidth = $single.outerWidth(), 
+            visible = Math.ceil($wrapper.innerWidth()/singleWidth),
+			 // note: doesn't include padding or border
+            currentPage = 1,
+            pages = Math.ceil($items.length / visible);            
+        // 1. Pad so that 'visible' number will always be seen, otherwise create empty items
+        if (($items.length % visible) != 0) {
+            $slider.append(repeat('<li class="empty" />', visible - ($items.length % visible)));
+            $items = $slider.find('> li');
+        }
+        // 2. Top and tail the list with 'visible' number of items, top has the last section, and tail has the first
+        $items.filter(':first').before($items.slice(- visible).clone().addClass('cloned'));
+        $items.filter(':last').after($items.slice(0, visible).clone().addClass('cloned'));
+        $items = $slider.find('> li'); // reselect
+        // 3. Set the left position to the first 'real' item
+        $wrapper.scrollLeft(singleWidth * visible);
+        // 4. paging function
+        function gotoPage(page) {
+            var dir = page < currentPage ? -1 : 1,
+                n = Math.abs(currentPage - page),
+                left = singleWidth * dir * visible * n;
+            $wrapper.filter(':not(:animated)').animate({
+                scrollLeft : '+=' + left
+            }, 500, function () {
+                if (page == 0) {
+                    $wrapper.scrollLeft(singleWidth * visible * pages);
+                    page = pages;
+                } else if (page > pages) {
+                    $wrapper.scrollLeft(singleWidth * visible);
+                    // reset back to start position
+                    page = 1;
+                } 
+                currentPage = page;
+            });                
+            
+            return false;
+        }
+        $wrapper.after('<a class="arrow back"></a><a class="arrow forward"></a>');
+        
+        // 5. Bind to the forward and back buttons
+        $('a.back', this).click(function () {
+            return gotoPage(currentPage - 1);                
+        });
+        
+        $('a.forward', this).click(function () {
+            return gotoPage(currentPage + 1);
+        });
+        
+        // create a public interface to move to a specific page
+        $(this).bind('goto', function (event, page) {
+            gotoPage(page);
+        });
+    });  
+};
+
+$(document).ready(function () {
+  $('.infiniteCarousel').infiniteCarousel();
+});
+</script>
+<div class="infiniteCarousel">
+  <div style="overflow: hidden;" class="wrapper">
+    <ul>
+          <li class="cloned"><a href="http://www.munitrujillo.gob.pe/portal/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/e1f979ea2b94f4a75483Sinttulo-5.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li><li class="empty cloned"></li><li class="empty cloned"></li><li class="empty cloned"></li><li class="empty cloned"></li><li class="cloned"><a href="http://www.oefa.gob.pe/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/d059f8fe3d5acacbe2547.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li>
+         <li class="cloned"><a href="http://www.tmb.cat/ca/home" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/a703259707005bdac0bc4.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li>
+         <li class="cloned"><a href="http://www.minam.gob.pe/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/7884a9652e94555c70f96.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li>
+         <li class="cloned"><a href="http://www.metropolitano.com.pe/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/b7ee6f5f9aa5cd17ca1a3.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li>
+         <li class="cloned"><a href="http://www.segat.gob.pe/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/dbdd5dfa1c4ce6667ee21.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li>
+         <li class="cloned"><a href="http://www.munitrujillo.gob.pe/portal/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/e1f979ea2b94f4a75483Sinttulo-5.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li>
+    
+    <li class="empty"></li><li class="empty"></li><li class="empty"></li><li class="empty"></li><li class="cloned"><a href="http://www.oefa.gob.pe/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/d059f8fe3d5acacbe2547.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li><li class="cloned"><a href="http://www.tmb.cat/ca/home" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/a703259707005bdac0bc4.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li><li class="cloned"><a href="http://www.minam.gob.pe/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/7884a9652e94555c70f96.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li><li class="cloned"><a href="http://www.metropolitano.com.pe/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/b7ee6f5f9aa5cd17ca1a3.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li><li class="cloned"><a href="http://www.segat.gob.pe/" title="Enlaces de Interes" target="_blank"><img src="tmt-icon_files/dbdd5dfa1c4ce6667ee21.jpg" alt="Transportes Metropolitanos de Trujillo" height="83" width="127"></a></li></ul>        
+    </div><a class="arrow back"></a><a class="arrow forward"></a><a class="arrow back"></a><a class="arrow forward"></a>
+</div>
+ 
+   	</div>     
+    </article>
+</div>
+<!-- InstanceEndEditable --></td>
+  </tr>
+</tbody></table>
+        </div>        
+       <footer>
+       <div id="bottom" align="center">
+           <div id="sombra">
+               <div id="sombra_izq"></div>
+               <div id="sombra_cent"></div>
+               <div id="sombra_der"></div>
+           </div>
+            <div id="button_datos">
+             
+<table width="100%">
+  <tbody><tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+     <p class="e32">CONTACTENOS</p>
+      <p class="blanco_tmt">Transportes Metropolitanos de Trujillo<br>
+        Jr. Independencia 431 Of. 100-102-103 Centro Histórico - Trujillo</p>
+      <div><ul>
+        <li class="blanco_tmt">E-mail: mensajes@tmt.gob.pe</li>
+        <li class="blanco_tmt">Telefonos:</li>
+      </ul>
+      </div>
+      <div>
+      <p class="blanco_tmt2"><img src="tmt-icon_files/telefono.png" height="19" width="19"> (051-044) - 205279</p>
+      <p class="blanco_tmt2"><img src="tmt-icon_files/telefono.png" height="19" width="19"> (051-044) - 250840</p></div>
+   </td>
+    <td align="left" valign="top"><p class="e32">ENLACES RELACIONADOS</p>
+     <div> <ul>
+        <li class="e31">www.munitrujillo.gob.pe</li>
+        <li class="e31">www.segat.gob.pe</li>
+        <li class="e31">www.minam.gob.pe</li>
+        <li class="e31">www.oefa.gob.pe</li>
+        <li class="e31">www.tmb.cat/ca/home</li>
+        <li class="e31">www.metropolitano.com.pe</li>
+        <li class="e31">www.protransporte.gob.pe</li>
+        
+        
+    </ul></div></td>
+    <td align="left" valign="top">
+    <br>
+    <div> <ul>
+        <li class="e32">Directorio Institucional</li>
+        <li class="e32">Ver Mapa</li>
+        </ul>
+      <p><img src="tmt-icon_files/mapa_pie.png" height="88" width="156"></p>
+      <ul>
+        <li class="e32"> Total visitas: 55070</li>  
+      </ul>
+    </div>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+        
+        
+        </div>
+            <div id="button_final">
+            <link href="tmt-icon_files/fonts25.css" rel="stylesheet" type="text/css">
+<div>
+	<article id="Caja">
+    	<div id="button_final">
+        <br>
+        <div><img src="tmt-icon_files/logo_tmt_inf.png" height="48" width="81"></div>
+        <div class="textnoti" align="center">Copyright 2013 Transportes Metropolitanos de Trujillo - TMT - MUNICIPALIDAD DE TRUJILLO. Todos los Derechos Reservados.</div>
+      </div>
+   	  </article>
+</div>
+        </div>
+        </div>
+       </footer>        
+	</div>
+</div>
+</div>
+</div>
+
+<iframe style="display: none;" allowtransparency="true" scrolling="no" id="rufous-sandbox" frameborder="0"></iframe></body><!-- InstanceEnd --></html>
