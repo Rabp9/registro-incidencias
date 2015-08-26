@@ -22,8 +22,8 @@ class Trabajador extends AppModel {
                 "rule" =>  array('minLength', '8'),
                 "message" => "Debe tener 8 carácteres"
             ),
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             ),
             "isUnique" => array(
@@ -32,8 +32,8 @@ class Trabajador extends AppModel {
             )
         ),
         "nombres" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             ),
             'alpha'=> array(
@@ -42,8 +42,8 @@ class Trabajador extends AppModel {
             )
         ),
         "apellidoPaterno" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             ),
             'alpha'=> array(
@@ -52,8 +52,8 @@ class Trabajador extends AppModel {
             )       
         ),
         "apellidoMaterno" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             ),
             'alpha'=> array(
@@ -62,8 +62,8 @@ class Trabajador extends AppModel {
             )
         ),
         "cargo" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         )

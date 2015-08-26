@@ -31,38 +31,38 @@ class Incidencia extends AppModel {
     
     public $validate = array(
         "asunto" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         ),
         "fecha" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         ),
         "idCruce" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         ),
         "diagnostico" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         ),
         "accion" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         ),
         "resultado" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         )

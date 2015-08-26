@@ -33,7 +33,25 @@
 }
 
 
-.selector tbody td, .selector thead th {
-    width: 33.33%;
+.selector#dv-cruces tbody td:nth-child(1),
+.selector#dv-cruces thead th:nth-child(1) {
+    width: 20%;
     float: left;
+}
+
+.selector#dv-cruces tbody td:nth-child(2),
+.selector#dv-cruces thead th:nth-child(2) {
+    width: 60%;
+    float: left;
+}
+
+.selector#dv-cruces tbody td:nth-child(3),
+.selector#dv-cruces thead th:nth-child(3) {
+    width: 20%;
+    float: left;
+}
+
+div.tooltip-inner {
+    padding: 5px !important;
+    background-color: #CCC;
 }

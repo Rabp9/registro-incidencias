@@ -10,14 +10,14 @@ class Cruce extends AppModel {
  
     public $validate = array(
         "idCruce" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         ),
         "descripcion" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         )

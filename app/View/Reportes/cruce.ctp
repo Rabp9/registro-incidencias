@@ -4,6 +4,7 @@
     echo $this->Html->css("jquery-ui.min");
     echo $this->Html->css("jquery-ui.structure.min");
     echo $this->Html->css("jquery-ui.theme.min");
+    echo $this->Html->css("selector");
     echo $this->Html->script("jquery-ui.min", array("inline" => false));
     echo $this->Html->script("datepicker-es", array("inline" => false));
 ?>
@@ -13,13 +14,7 @@
 <?php 
     echo $this->Form->create("Cruce");
     echo $this->Html->para("lead", "Seleccione un Cruce y un intervalo de Fechas::");
-    echo $this->Form->input("idCruce", array(
-        "label" => "Cruce",
-        "div" => "form-group",
-        "options" => $cruces,
-        "class" => "form-control",
-        "empty" => "Selecciona uno"
-    ));
+    echo $this->element("getSelectorCruce", array("model" => "Cruce"));
     echo "Desde ";
     echo $this->Form->input("fechaInicio", array(
         "label" => false,

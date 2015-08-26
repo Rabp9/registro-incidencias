@@ -12,8 +12,8 @@ class Tipo extends AppModel {
       
     public $validate = array(
         "descripcion" => array(
-            "notEmpty" => array(
-                "rule" => "notEmpty",
+            "notBlank" => array(
+                "rule" => "notBlank",
                 "message" => "No puede estar vacio"
             )
         )

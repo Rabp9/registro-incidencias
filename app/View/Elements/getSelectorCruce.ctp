@@ -64,8 +64,8 @@
     $("body").on("click", ".seleccionarCruce", function() {
         var idCruce = $(this).parent().parent().find(".tdIdCruce").text();
         var descripcion = $(this).parent().parent().find(".tdDescripcion").text();
-        $("#IncidenciaIdCruce").val(idCruce);      
-        $("#IncidenciaDescripcion").val(descripcion);
+        $("#<?php echo $model; ?>IdCruce").val(idCruce);      
+        $("#<?php echo $model; ?>Descripcion").val(descripcion);
         $("#mdlBuscarCruce").modal('toggle');
         $("#CruceBusqueda").val("");
         <?php

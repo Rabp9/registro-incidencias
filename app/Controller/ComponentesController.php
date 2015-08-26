@@ -24,28 +24,6 @@ class ComponentesController extends AppController {
         $componentes = $this->Paginator->paginate();
         $this->set(compact("componentes"));
     }
-/*
-    public function add() {
-        $this->layout = "main";
-        
-        if ($this->request->is(array("post", "put"))) {
-            $this->Componente->create();
-           
-            $filename = $this->request->data["Componente"]["imagen"]["name"];
-            $tmp_name = $this->request->data["Componente"]["imagen"]["tmp_name"];
-            unset($this->request->data["Componente"]["imagen"]);
-            $this->request->data["Componente"]["imagen"] = $filename;
-            
-            if ($this->Componente->save($this->request->data)) {
-                move_uploaded_file($tmp_name, WWW_ROOT . "img" . DS . "Componentes" . DS . $filename);
-                $this->Session->setFlash(__("El Componente ha sido registrado correctamente."), "flash_bootstrap");
-                return $this->redirect(array("action" => "index"));
-            }
-            
-            $this->Session->setFlash(__("No fue posible registrar el componente."), "flash_bootstrap");
-        }
-    }
-*/
     
     public function add() {
         $this->layout = "main";
@@ -129,5 +107,16 @@ class ComponentesController extends AppController {
             $this->Session->setFlash(__("El Componente de Còdigo: %s ha sido eliminado.", h($id)), "flash_bootstrap");
             return $this->redirect(array("action" => "index"));
         }
+    }
+    
+    public function getImagenByIdComponente() {
+        $this->layout = "ajax";
+        
+        $idComponente = $this->params["url"]["idComponente"];
+        $componente = $this->Componente->findByIdcomponente($idComponente);
+        $imagen = $componente["Componente"]["imagen"];
+        echo $imagen;
+        
+        die();
     }
 }

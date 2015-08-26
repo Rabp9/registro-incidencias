@@ -8,12 +8,17 @@
 <?php 
     echo $this->Form->create("Trabajador");
     echo $this->Html->para("lead", "Ingrese los datos del Trabajador:");
-    echo $this->Form->input("dni", array("type" => "hidden"));
-    echo $this->Form->input("nombres", array(
-        "label" => "Nombres",
+    echo $this->Form->input("idTrabajador", array("type" => "hidden"));
+    echo $this->Form->input("dni", array(
+        "label" => "DNI",
         "div" => "form-group",
         "class" => "form-control",
         "autofocus" => "autofocus"
+    ));
+    echo $this->Form->input("nombres", array(
+        "label" => "Nombres",
+        "div" => "form-group",
+        "class" => "form-control"
     ));
     echo $this->Form->input("apellidoPaterno", array(
         "label" => "Apellido Paterno",

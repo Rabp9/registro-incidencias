@@ -189,7 +189,7 @@
             </div>
         </div>
         <nav class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
+            <div class="container" style="text-align: center;">
                 <h4>©2015. Todos los derechos reservados. CCT - Centro de Control de Tráfico</h4>
             </div>
         </nav>
