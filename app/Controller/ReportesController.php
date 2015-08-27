@@ -5,8 +5,10 @@
  * @author admin
  */
 App::uses('CakeTime', 'Utility');
+App::import("PDF", "Lib");
 
 class ReportesController extends AppController {
+
     public $uses = array("Cruce", "Tipo", "Incidencia", "Componente");
 
     public function index() {
@@ -21,6 +23,26 @@ class ReportesController extends AppController {
             "conditions" => array("Cruce.estado" => '1'),
             "fields" => array("Cruce.idCruce", "Cruce.descripcion")
         )));
+        
+        if($this->request->is(array("post", "put"))) {
+            
+/*          App::import("Vendor", "Fpdf", array("file" => "fpdf/fpdf.php"));
+            $this->layout = 'pdf'; //this will use the pdf.ctp layout
+
+            $this->set("fpdf", new FPDF("P","mm","A4"));
+
+            // Inicialización de variables
+            $saludo = "hola, on ta bebe, aqui ta";
+            // Recuperación de información
+
+            // Salida de la Información
+            $this->set(compact("saludo"));
+
+            $this->response->type("application/pdf");
+            $this->render("pdf_cruces");
+ * 
+ */
+        }
     }
 
     public function getByCruce() {
@@ -29,10 +51,10 @@ class ReportesController extends AppController {
         $this->set("incidencias", $this->Incidencia->find("all", array(
             "conditions" => array(
                 "Incidencia.estado" => 1,
-                "Incidencia.idCruce" => $this->request->data["Cruce"]["idCruce"],
+                "Incidencia.idCruce" => $this->request->data["Reporte"]["idCruce"],
                 "Incidencia.fecha between ? and ?" => array(
-                    CakeTime::format($this->request->data["Cruce"]["fechaInicio"], "%Y-%m-%d"), 
-                    CakeTime::format($this->request->data["Cruce"]["fechaFin"], "%Y-%m-%d")
+                    CakeTime::format($this->request->data["Reporte"]["fechaInicio"], "%Y-%m-%d"), 
+                    CakeTime::format($this->request->data["Reporte"]["fechaFin"], "%Y-%m-%d")
                 )
             )
         )));

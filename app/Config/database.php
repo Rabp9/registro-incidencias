@@ -7,7 +7,7 @@ class DATABASE_CONFIG {
 		'host' => '127.0.0.1',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'sis-inc',
+		'database' => 'registro-incidencias',
 		'prefix' => '',
 		'encoding' => 'utf8'
 	);

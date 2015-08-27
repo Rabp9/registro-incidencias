@@ -12,9 +12,9 @@
 <h2>Reportes <small>Por Cruce</small></h2>
 
 <?php 
-    echo $this->Form->create("Cruce");
+    echo $this->Form->create("Reporte", array("action" => "cruce"));
     echo $this->Html->para("lead", "Seleccione un Cruce y un intervalo de Fechas::");
-    echo $this->element("getSelectorCruce", array("model" => "Cruce"));
+    echo $this->element("getSelectorCruce", array("model" => "Reporte"));
     echo "Desde ";
     echo $this->Form->input("fechaInicio", array(
         "label" => false,
@@ -38,12 +38,12 @@
 
 <?php echo $this->Html->scriptStart(array('inline' => false)); ?>
     $(document).ready(function() {
-        $("#CruceFechaInicio").datepicker({
+        $("#ReporteFechaInicio").datepicker({
             changeMonth: true,
             changeYear: true,
             dateFormat: "yy-mm-dd"
         });
-        $("#CruceFechaFin").datepicker({
+        $("#ReporteFechaFin").datepicker({
             changeMonth: true,
             changeYear: true,
             dateFormat: "yy-mm-dd"
@@ -60,13 +60,13 @@
         "async" => true,
         "method" => "post",
         "dataExpression" => true,
-        "data" => $this->Js->get("#CruceCruceForm")->serializeForm(array(
+        "data" => $this->Js->get("#ReporteCruceForm")->serializeForm(array(
             "isForm" => true,
             "inline" => true
         ))
     ));
 
-    $this->Js->get("#CruceIdCruce")->event("change", $cruces);
-    $this->Js->get("#CruceFechaInicio")->event("change", $cruces);
-    $this->Js->get("#CruceFechaFin")->event("change", $cruces);
+    $this->Js->get("#mdlBuscarCruce")->event("hidden.bs.modal", $cruces);
+    $this->Js->get("#ReporteFechaInicio")->event("change", $cruces);
+    $this->Js->get("#ReporteFechaFin")->event("change", $cruces);
 ?>
