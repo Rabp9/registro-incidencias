@@ -7,6 +7,11 @@
 App::uses('CakeTime', 'Utility');
 
 class IncidenciasController extends AppController {
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow("edit");
+    }
+
     public $uses = array("Incidencia", "User");
     public $components = array('Paginator');
 
@@ -73,6 +78,50 @@ class IncidenciasController extends AppController {
             throw new NotFoundException(__("Incidencia inválida"));
         } 
         $this->set("incidencia", $incidencia);
+    }
+    
+    public function edit($id = null) {
+        $this->layout = "main";
+            
+        if (!$id) {
+            throw new NotFoundException(__("Incidencia inválida"));
+        }
+        $incidencia = $this->Incidencia->findByIdincidencia($id);
+        
+        if (!$incidencia) {
+            throw new NotFoundException(__("Incidencia inválida"));
+        }
+          
+        $this->set("trabajadores", $this->Incidencia->Trabajador->find("list", array(
+            "fields" => array("Trabajador.idTrabajador", "Trabajador.nombreCompleto"),
+            'conditions' => array('Trabajador.estado' => '1')
+        )));
+        
+        $this->set("cruces", $this->Incidencia->Cruce->find("list", array(
+            "fields" => array("Cruce.idCruce", "Cruce.descripcion")
+        )));
+        
+        $this->set("tipos", $this->Incidencia->Tipo->find("list", array(
+            "fields" => array("Tipo.idTipo", "Tipo.descripcion"),
+            'conditions' => array("Tipo.estado" => '1')
+        )));
+        
+        $this->set("componentes", $this->Incidencia->Componente->find("list", array(
+            "fields" => array("Componente.idComponente", "Componente.descripcion"),
+            'conditions' => array('Componente.estado' => '1')
+        )));
+        
+        if ($this->request->is(array("post", "put"))) {
+            $this->Incidencia->id = $id;
+            if ($this->Incidencia->save($this->request->data)) {
+                $this->Session->setFlash(__("La Incidencia ha sido actualizada."), "flash_bootstrap");
+                return $this->redirect(array("action" => "index"));
+            }
+            $this->Session->setFlash(__("No es posible actualizar la Incidencia."), "flash_bootstrap");
+        }
+        if (!$this->request->data) {
+            $this->request->data = $incidencia;
+        }
     }
     
     public function delete($id) {

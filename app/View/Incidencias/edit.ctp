@@ -1,6 +1,6 @@
-<!-- File: /app/View/Incidencias/add.ctp -->
+<!-- File: /app/View/Incidencias/edit.ctp -->
 <?php 
-    $this->assign("title", "Incidencias - Nuevo");
+    $this->assign("title", "Incidencias - Editar");
     echo $this->Html->css("jquery-ui.min");
     echo $this->Html->css("jquery-ui.structure.min");
     echo $this->Html->css("jquery-ui.theme.min");
@@ -10,17 +10,18 @@
     echo $this->Html->script("checkboxes-fix", array("inline" => false));
 ?>
 
-<h2>Incidencias <small>Nuevo</small></h2>
+<h2>Incidencias <small>Editar</small></h2>
 
 <?php 
     echo $this->Form->create("Incidencia");
     echo $this->Html->para("lead", "Ingrese los datos de la Incidencia:");
+    echo $this->Form->input("idIncidencia", array("type" => "hidden"));
     echo $this->Form->input("asunto", array(
         "label" => "Asunto",
         "div" => "form-group",
         "autofocus" => "autofocus",
         "class" => "form-control"
-    ));  
+    ));
     echo $this->Form->input("fecha", array(
         "label" => "Fecha",
         "div" => "form-group",
@@ -34,7 +35,7 @@
         "options" => $trabajadores,
         "class" => "form-control incidencia-checkbox"
     ));
-    echo $this->element("getSelectorCruce", array("model" => "Incidencia", "descripcion" => ""));
+    echo $this->element("getSelectorCruce", array("model" => "Incidencia", "descripcion" => $this->request->data["Cruce"]["descripcion"]));
     echo $this->Form->input("Tipo", array(
         "label" => "Tipo",
         "div" => "form-group",
@@ -105,8 +106,9 @@
             $(this).attr("data-html", "true").attr("data-toggle", "tooltip").attr("data-placement", "right");
             var alt = $(this).text();
             var img = $(this).attr("data-img");
-            $(this).attr("data-original-title", "<img alt='" + alt + "' width='180' src='../img/Componentes/" + img + "' />");
+            $(this).attr("data-original-title", "<img alt='" + alt + "' width='180' src='../../img/Componentes/" + img + "' />");
         });
         $('[data-toggle="tooltip"]').tooltip();
+        
     });
 <?php echo $this->Html->scriptEnd(); ?>

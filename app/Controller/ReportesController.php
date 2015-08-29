@@ -5,16 +5,15 @@
  * @author admin
  */
 App::uses('CakeTime', 'Utility');
-App::import("PDF", "Lib");
+App::import("Lib", "PDF");
 
 class ReportesController extends AppController {
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow("prueba");
+    }
 
     public $uses = array("Cruce", "Tipo", "Incidencia", "Componente");
-
-    public function index() {
-        $this->layout = "main";
-        
-    }
     
     public function cruce() {
         $this->layout = "main";
@@ -25,11 +24,9 @@ class ReportesController extends AppController {
         )));
         
         if($this->request->is(array("post", "put"))) {
-            
-/*          App::import("Vendor", "Fpdf", array("file" => "fpdf/fpdf.php"));
             $this->layout = 'pdf'; //this will use the pdf.ctp layout
 
-            $this->set("fpdf", new FPDF("P","mm","A4"));
+            $this->set("pdf", new PDF());
 
             // Inicialización de variables
             $saludo = "hola, on ta bebe, aqui ta";
@@ -40,8 +37,6 @@ class ReportesController extends AppController {
 
             $this->response->type("application/pdf");
             $this->render("pdf_cruces");
- * 
- */
         }
     }
 

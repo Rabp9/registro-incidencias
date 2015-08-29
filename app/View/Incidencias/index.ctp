@@ -46,6 +46,16 @@
                                         array("escape" => false)
                                     );
                                 ?>
+                            </li>    
+                            <li role="presentation">
+                                <?php
+                                    echo $this->Html->link(
+                                        $this->Html->tag("span", "", array("class" => "glyphicon glyphicon-pencil")) .
+                                        " Editar",
+                                        array("controller" => "Incidencias", "action" => "edit", $incidencia["Incidencia"]["idIncidencia"]),
+                                        array("escape" => false)
+                                    );
+                                ?>
                             </li>
                             <li role="presentation">
                                 <?php

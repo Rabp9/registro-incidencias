@@ -14,6 +14,7 @@
         "readonly" => true,
         "data-toggle" => "modal",
         "data-target" => "#mdlBuscarCruce",
+        "value" => $descripcion
     ));
 ?>
 
