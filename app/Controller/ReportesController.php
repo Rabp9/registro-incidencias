@@ -29,9 +29,19 @@ class ReportesController extends AppController {
             $this->set("pdf", new PDF());
 
             // Inicialización de variables
-            $saludo = "hola, on ta bebe, aqui ta";
+            
             // Recuperación de información
-
+            $incidencias = $this->Incidencia->find("all", array(
+                "conditions" => array(
+                    "Incidencia.estado" => 1,
+                    "Incidencia.idCruce" => $this->request->data["Reporte"]["idCruce"],
+                    "Incidencia.fecha between ? and ?" => array(
+                        CakeTime::format($this->request->data["Reporte"]["fechaInicio"], "%Y-%m-%d"), 
+                        CakeTime::format($this->request->data["Reporte"]["fechaFin"], "%Y-%m-%d")
+                    )
+                )
+            ));
+            
             // Salida de la Información
             $this->set(compact("saludo"));
 

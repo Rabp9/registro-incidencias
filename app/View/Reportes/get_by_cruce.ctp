@@ -20,3 +20,5 @@
         </tbody>
     </table>
 </div>
+<?php echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-save")) . " Exportar a PDF", array("class" => "btn btn-default")); ?>
+    

@@ -31,9 +31,7 @@
     echo $this->Html->div(null, "", array(
         "id" => "reporte"
     ));
-    echo $this->Form->button($this->Html->tag("span", "", array("class" => "glyphicon glyphicon-save")) . " Exportar a PDF", array("class" => "btn btn-default"));
     echo $this->Form->end();
-    echo $this->Html->link("Regresar a Lista Componentes", array("controller" => "Componentes", "action" => "index"));
 ?>
 
 <?php echo $this->Html->scriptStart(array('inline' => false)); ?>

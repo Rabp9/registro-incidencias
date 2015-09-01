@@ -7,18 +7,77 @@
 App::import("Vendor", "Fpdf", array("file" => "fpdf/fpdf.php"));
 
 class PDF extends FPDF {
+    private $cabecera = array(
+        "imagen" => "img/cabecera.jpg",
+        "left" => 0,
+        "top" => 14,
+        "width" => "",
+        "height" => ""
+    );  
+    private $pie = array(
+        "imagen" => "img/pie.jpg",
+        "left" => 3,
+        "top" => 246,
+        "width" => 206.5,
+        "height" => 51
+    );
     
-    function Header() {
-        $this->SetFont('Arial','B',15);
-        $this->Cell(80);
-        $this->Cell(30,10,'Title',1,0,'C');
-        $this->Ln(20);
+    public function Header() {
+        $this->Image($this->cabecera["imagen"], 
+            $this->cabecera["left"],
+            $this->cabecera["top"],
+            $this->cabecera["width"],
+            $this->cabecera["height"]
+        );
     }
 
-    function Footer() {
-        $this->SetY(-15);
-        $this->SetFont('Arial','I',8);
-        $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+    public function Footer() {
+        $this->Image($this->pie["imagen"], 
+            $this->pie["left"],
+            $this->pie["top"],
+            $this->pie["width"],
+            $this->pie["height"]
+        );
+    }
+    
+    public function title($title) {
+        $n = $this->GetStringWidth($title);
+        $x = ceil(($this->w - $n) / 2) - 1;
+        $this->Text($x,42.5, utf8_decode($title));
+    }
+    
+    public function subtitle($subtitle) {
+        $this->SetFont("Georgia", "B", 11);
+        $this->Cell($this->w - ($this->lMargin + $this->rMargin), 6, utf8_decode($subtitle), 1);
+        $this->SetFont("Georgia", "", 11);
+    }
+    
+    public function content($content) {
+        $content_w = 0;
+        $this->SetFont("Georgia", "", 11);
+        foreach($content as $i => $dato) {
+            if($i == (sizeof($content) - 1) && $i == 0){
+                $dato_w = $this->w - ($this->lMargin + $this->rMargin);
+                $this->Cell($dato_w, 6, utf8_decode($dato), 1);
+            }
+            elseif($i == (sizeof($content) - 1)) {
+                $dato_w = $this->GetStringWidth($dato) + 2;
+                $this->Cell($dato_w, 6, utf8_decode($dato), "TB");
+                $content_w += $dato_w;
+                $last_dato_w = ($this->w - ($this->lMargin + $this->rMargin)) - $content_w;
+                $this->Cell($last_dato_w, 6, "", "TBR");
+            } elseif($i == 0) {
+                $dato_w = $this->GetStringWidth($dato) + 2;
+                $this->Cell($dato_w, 6, utf8_decode($dato), "LTB");
+                $this->Cell(10, 6, "", "TB");
+                $content_w += $dato_w + 10;
+            } else {
+                $dato_w = $this->GetStringWidth($dato) + 2;
+                $this->Cell($dato_w, 6, utf8_decode($dato), "TB");
+                $this->Cell(10, 6, "", "TB");
+                $content_w += $dato_w + 10;
+            }
+        }    
     }
 }
 ?>

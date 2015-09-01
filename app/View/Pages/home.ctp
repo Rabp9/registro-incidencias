@@ -14,6 +14,7 @@ foreach($incidencias as $incidencia) {
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <h2><?php echo $incidencia["Cruce"]["descripcion"]; ?></h2>
+        <?php if(!empty($incidencia["Componente"])) { ?>
         <div id="carousel-example-generic<?php echo $incidencia["Incidencia"]["idIncidencia"]; ?>" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -21,7 +22,6 @@ foreach($incidencias as $incidencia) {
                 <li data-target="#carousel-example-generic<?php echo $incidencia["Incidencia"]["idIncidencia"]; ?>" data-slide-to=<?php echo $k_componente; ?> <?php echo $k_componente == 0 ? "class='active'" : "" ?>></li>
                 <?php } ?>
             </ol>
-
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <?php foreach($incidencia["Componente"] as $k_componente => $componente) { ?>
@@ -44,6 +44,7 @@ foreach($incidencias as $incidencia) {
             <span class="sr-only">Next</span>
           </a>
         </div>
+        <?php } ?>
         
       <div class="caption">
         <h3><?php echo $incidencia["Incidencia"]["asunto"]; ?></h3>
