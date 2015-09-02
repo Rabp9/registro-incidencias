@@ -554,7 +554,7 @@ class Set {
 			$path = explode('.', $path);
 		}
 		$tmp = array();
-
+       
 		if (empty($path)) {
 			return null;
 		}

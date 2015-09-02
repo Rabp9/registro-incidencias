@@ -29,7 +29,18 @@
     
     $pdf->subtitle("Datos Encontrados");
     $pdf->ln();
-    // $pdf->table($datos);
+    
+    // Máximo las cabeceras pueden sumar 190
+    $cabeceras = array(
+        array("descripcion" => "Código", "width" => 20), 
+        array("descripcion" => "Asunto", "width" => 75), 
+        array("descripcion" => "Cruce", "width" => 75), 
+        array("descripcion" => "Fecha", "width" => 20)
+    );
+    $columns = array(
+        array("idIncidencia", "asunto", "cruce", "fecha")
+    );
+    $pdf->table($cabeceras, $incidencias, $columns);
 
     $pdf->Output("Reporte_por Cruces.pdf", "D");
 ?>

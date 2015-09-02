@@ -79,5 +79,20 @@ class PDF extends FPDF {
             }
         }    
     }
+    
+    public function table($cabeceras, $info, $columns) {
+        $this->SetFont("Georgia", "B", 11);
+        foreach($cabeceras as $cabecera) {
+            $this->Cell($cabecera["width"], 6, utf8_decode($cabecera["descripcion"]), 1);
+        }
+        $this->ln();
+        $this->SetFont("Georgia", "", 11);
+        foreach($info as $k_data => $data) {
+            foreach($columns as $k_column => $column) {
+                $this->Cell($cabeceras[$k_column]["width"], 6, utf8_decode("asdsa"), 1);
+            }               
+            $this->ln();
+        }
+    }
 }
 ?>

@@ -31,7 +31,7 @@ class ReportesController extends AppController {
             // Inicialización de variables
             
             // Recuperación de información
-            $incidencias = $this->Incidencia->find("all", array(
+            $tmp_incidencias = $this->Incidencia->find("all", array(
                 "conditions" => array(
                     "Incidencia.estado" => 1,
                     "Incidencia.idCruce" => $this->request->data["Reporte"]["idCruce"],
@@ -42,8 +42,18 @@ class ReportesController extends AppController {
                 )
             ));
             
+            $incidencias = array();
+            foreach($tmp_incidencias as $incidencia) {
+                $incidencias[] = array(
+                    "idIncidencia" => $incidencia["Incidencia"]["idIncidencia"],
+                    "asunto" => $incidencia["Incidencia"]["asunto"],
+                    "cruce" => $incidencia["Cruce"]["descripcion"],
+                    "fecha" => $incidencia["Incidencia"]["fecha"]
+                );
+            }
+            
             // Salida de la Información
-            $this->set(compact("saludo"));
+            $this->set(compact("incidencias"));
 
             $this->response->type("application/pdf");
             $this->render("pdf_cruces");
