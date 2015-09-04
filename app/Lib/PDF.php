@@ -48,7 +48,8 @@ class PDF extends FPDF {
     
     public function subtitle($subtitle) {
         $this->SetFont("Georgia", "B", 11);
-        $this->Cell($this->w - ($this->lMargin + $this->rMargin), 6, utf8_decode($subtitle), 1);
+        $this->SetFillColor(230, 230, 230);
+        $this->Cell($this->w - ($this->lMargin + $this->rMargin), 6, utf8_decode($subtitle), 1, 0   , "", true);
         $this->SetFont("Georgia", "", 11);
     }
     
@@ -82,16 +83,27 @@ class PDF extends FPDF {
     
     public function table($cabeceras, $info, $columns) {
         $this->SetFont("Georgia", "B", 11);
+        $this->SetFillColor(230, 230, 230);
         foreach($cabeceras as $cabecera) {
-            $this->Cell($cabecera["width"], 6, utf8_decode($cabecera["descripcion"]), 1);
+            $this->Cell($cabecera["width"], 6, utf8_decode($cabecera["descripcion"]), 1, 0, "",true);
         }
+        
         $this->ln();
         $this->SetFont("Georgia", "", 11);
+        $par_impar = true;
+        $n_data = sizeof($info);
+        
         foreach($info as $k_data => $data) {
+            if($par_impar) $this->SetFillColor(250, 250, 250);
+            else $this->SetFillColor(228, 238, 248);
+            $borders = $n_data == $k_data + 1 ? "LRB" : "LR";
+            
             foreach($columns as $k_column => $column) {
-                $this->Cell($cabeceras[$k_column]["width"], 6, utf8_decode("asdsa"), 1);
-            }               
+                $this->Cell($cabeceras[$k_column]["width"], 6, utf8_decode($data[$column]), $borders, 0, "", true);
+            }
+            
             $this->ln();
+            $par_impar = !$par_impar;
         }
     }
 }

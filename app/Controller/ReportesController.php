@@ -8,11 +8,6 @@ App::uses('CakeTime', 'Utility');
 App::import("Lib", "PDF");
 
 class ReportesController extends AppController {
-    public function beforeFilter() {
-        parent::beforeFilter();
-        $this->Auth->allow("prueba");
-    }
-
     public $uses = array("Cruce", "Tipo", "Incidencia", "Componente");
     
     public function cruce() {
@@ -29,6 +24,7 @@ class ReportesController extends AppController {
             $this->set("pdf", new PDF());
 
             // Inicialización de variables
+            $user = $this->Auth->user();
             
             // Recuperación de información
             $tmp_incidencias = $this->Incidencia->find("all", array(
@@ -54,6 +50,7 @@ class ReportesController extends AppController {
             
             // Salida de la Información
             $this->set(compact("incidencias"));
+            $this->set(compact("user"));
 
             $this->response->type("application/pdf");
             $this->render("pdf_cruces");

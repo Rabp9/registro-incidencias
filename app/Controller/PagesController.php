@@ -38,7 +38,10 @@ class PagesController extends AppController {
             "conditions" => array("Incidencia.estado" => 1),
             "limit" => 12
         ));
-        
+        foreach($incidencias as $k_incidencia => $incidencia) {
+            $diagnostico = strlen($incidencia["Incidencia"]["diagnostico"]) > 500 ? substr($incidencia["Incidencia"]["diagnostico"], 0, 500) . "..." : $incidencia["Incidencia"]["diagnostico"];
+            $incidencias[$k_incidencia]["Incidencia"]["diagnostico"] == $diagnostico;
+        }
         $this->set(compact("incidencias"));
     }
     

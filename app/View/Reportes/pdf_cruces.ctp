@@ -15,7 +15,7 @@
     $pdf->ln();
     $pdf->content(array(
         "Fecha: " . date("Y-m-d"),
-        "Usuario: " . "Username"
+        "Usuario: " . $user["username"]
     ));    
     
     $pdf->ln();
@@ -27,20 +27,19 @@
     ));
     $pdf->ln();
     
-    $pdf->subtitle("Datos Encontrados");
+    $pdf->subtitle("Datos Encontrados (" . sizeof($incidencias) . " incidencias en total)");
     $pdf->ln();
     
     // Máximo las cabeceras pueden sumar 190
     $cabeceras = array(
-        array("descripcion" => "Código", "width" => 20), 
+        array("descripcion" => "Código", "width" => 17), 
         array("descripcion" => "Asunto", "width" => 75), 
         array("descripcion" => "Cruce", "width" => 75), 
-        array("descripcion" => "Fecha", "width" => 20)
+        array("descripcion" => "Fecha", "width" => 23)
     );
     $columns = array(
-        array("idIncidencia", "asunto", "cruce", "fecha")
+        "idIncidencia", "asunto", "cruce", "fecha"
     );
     $pdf->table($cabeceras, $incidencias, $columns);
-
     $pdf->Output("Reporte_por Cruces.pdf", "D");
 ?>

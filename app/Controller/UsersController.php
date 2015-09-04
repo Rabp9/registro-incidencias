@@ -21,6 +21,7 @@ class UsersController extends AppController {
         // Usuario
         $group->id = 2;
         $this->Acl->allow($group, 'controllers');
+        $this->Acl->deny($group, 'controllers/Incidencias/edit');
         
         // we add an exit to avoid an ugly "missing views" error message
         echo "all done";
