@@ -13,7 +13,7 @@
 
 <?php 
     echo $this->Form->create("Reporte", array("action" => "cruce"));
-    echo $this->Html->para("lead", "Seleccione un Cruce y un intervalo de Fechas::");
+    echo $this->Html->para("lead", "Seleccione un Cruce y un intervalo de Fechas:");
     echo $this->element("getSelectorCruce", array("model" => "Reporte", "descripcion" => ""));
     echo "Desde ";
     echo $this->Form->input("fechaInicio", array(
